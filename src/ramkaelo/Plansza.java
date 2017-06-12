@@ -134,6 +134,8 @@ public class Plansza extends JPanel {
 					int result = pane.showConfirmDialog(this, "You won!!! Play again?");
 					if ( result == JOptionPane.OK_OPTION ) {
 						this.playAgain();
+					}else {
+						close = true;
 					}
 				}
 			}else if(!trafionyPojazd){
@@ -149,7 +151,7 @@ public class Plansza extends JPanel {
 					if ( result == JOptionPane.OK_OPTION ) {
 						this.playAgain();
 					}else {
-
+						close = true;
 					}
 
 				}
